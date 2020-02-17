@@ -1,0 +1,9 @@
+<h1>New Game</h1>
+<p>Your letters : <%= @new %></p>
+
+<h2>what's the longest word you can find ?</h2>
+<form action="/score">
+  <input type="text" name="question" placeholder="Your word">
+  <input type="hidden" id="tags_list" name="tags_list" value="<%= @new %>">
+  <input type="submit">
+</form>
